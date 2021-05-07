@@ -15,7 +15,15 @@ class App extends Component {
           {init ? (
             <CardList />
           ) : (
-            <button onClick={() => this.setState({ init: true })}>Start</button>
+            <div>
+              <h1>Triwizard Tournament</h1>
+              <button
+                className="restartButton"
+                onClick={() => this.setState({ init: true })}
+              >
+                Start
+              </button>
+            </div>
           )}
         </header>
       </div>

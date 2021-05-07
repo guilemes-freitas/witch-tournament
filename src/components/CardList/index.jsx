@@ -69,7 +69,12 @@ class CardList extends Component {
                 <Card student={student} />
               ))}
             </div>
-            <button onClick={() => this.getStudents()}>Try Again</button>
+            <button
+              className="restartButton"
+              onClick={() => this.getStudents()}
+            >
+              Try Again
+            </button>
           </>
         ) : (
           <lottie-player

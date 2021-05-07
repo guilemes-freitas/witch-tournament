@@ -4,13 +4,16 @@
   width: 80%;
 }
 
-.restart {
-  position: relative;
-}
-
-.restart::after {
-  content: "Try again";
-  position: absolute;
-  top: 200px;
-  left: 100px;
+.restartButton {
+  margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: rgb(39, 76, 177);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }

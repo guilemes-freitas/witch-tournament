@@ -20,14 +20,16 @@
 .card {
   position: relative;
   display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 210px 210px 80px;
+  grid-template-columns: 280px;
+  grid-template-rows: 190px 190px 60px;
   grid-template-areas: "image" "house" "stats";
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
   color: black;
+
+  transition: 0.5s ease;
 }
 
 .card-image {
@@ -58,7 +60,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  font-size: 16px;
+  font-size: 12px;
   color: white;
   width: 30%;
 }
@@ -79,8 +81,8 @@
 }
 .houseImg {
   margin-right: 1rem;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .studentName {
   margin-top: 0;
@@ -113,14 +115,13 @@
 
 .wand {
   position: relative;
-  bottom: 60px;
+  bottom: 40px;
   width: 80%;
 }
 .card details {
   width: 100%;
   display: flex;
   flex-direction: row;
-  transition: all 2s ease-out;
   position: absolute;
 }
 
@@ -129,12 +130,13 @@ summary {
   list-style: none;
   margin: 0;
 
-  transition: all 2s ease-out;
+  outline: none;
+  cursor: pointer;
 }
 .wandDetails {
   position: absolute;
-  left: 33%;
-  top: 10%;
+  left: 24%;
+  top: -50%;
 }
 .wandDetail {
   font-size: 14px;
@@ -143,4 +145,11 @@ summary {
 }
 .house {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
