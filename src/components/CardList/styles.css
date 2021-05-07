@@ -1,0 +1,16 @@
+.cardList {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.restart {
+  position: relative;
+}
+
+.restart::after {
+  content: "Try again";
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}

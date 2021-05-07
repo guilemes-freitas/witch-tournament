@@ -1,0 +1,93 @@
+/* .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(
+      to bottom,
+      rgba(27, 25, 6, 0.7) 0%,
+      rgba(27, 26, 6, 0.7) 100%
+    ),
+    url("../../assets/card.jpg");
+  background-size: cover;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  border-radius: 20px;
+  border: 1px solid #0fbf6b;
+  width: 325px;
+  min-height: 500px;
+} */
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "house" "stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: black;
+}
+
+.card-image {
+  grid-area: image;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-house {
+  grid-area: house;
+}
+
+.card-stats {
+  grid-area: stats;
+  display: flex;
+  justify-content: space-around;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(7, 255, 110);
+}
+.stat {
+  font-size: 18px;
+  width: 33%;
+}
+.card .studentImg {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.houseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.houseImg {
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+}
+.studentName {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card details {
+  height: 40px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.studentGender {
+  text-transform: capitalize;
+}
+
+.Gryffindor {
+  background: #b5332f;
+}
