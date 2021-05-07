@@ -48,7 +48,7 @@ class CardList extends Component {
     this.setState({
       loading: true,
     });
-    fetch("http://hp-api.herokuapp.com/api/characters/students")
+    fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((response) => response.json())
       .then((response) => this.pickRandom(response))
       .then((response) => this.setState({ loading: false }));
